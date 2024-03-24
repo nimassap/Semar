@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "365127813286",
+    "project_id": "semarundip-704dd",
+    "storage_bucket": "semarundip-704dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365127813286:android:c665a4b2d6760118274c67",
+        "android_client_info": {
+          "package_name": "com.example.semar5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365127813286-vh57ta18t7h0gqkamo6i4q4mor820776.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe8Rjl-TnWRiu1QbSgKgr15OCIy9rSE0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365127813286-vh57ta18t7h0gqkamo6i4q4mor820776.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

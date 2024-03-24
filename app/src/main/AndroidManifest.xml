@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.example.semar5.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.semar5.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logosemar1"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/logosemar1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Semar5"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".NotifikasiAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GedungEEdit"
+            android:exported="false" />
+        <activity
+            android:name=".GedungDEdit"
+            android:exported="false" />
+        <activity
+            android:name=".GedungCEdit"
+            android:exported="false" />
+        <activity
+            android:name=".GedungBEdit"
+            android:exported="false" />
+        <activity
+            android:name=".GedungAEdit"
+            android:exported="false" />
+        <activity
+            android:name=".VipNonAcEdit"
+            android:exported="false" />
+        <activity
+            android:name=".VipAcEdit"
+            android:exported="false" />
+        <activity
+            android:name=".StandardEdit"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe5BEdit"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe5AEdit"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe4Edit"
+            android:exported="false" />
+        <activity
+            android:name=".DaftarKamar"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe3Edit"
+            android:exported="false" />
+        <activity
+            android:name=".DataMahasiswaKamarTambah"
+            android:exported="false" />
+        <activity
+            android:name=".DataMahasiswaUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".DataMahasiswaTambahKamar"
+            android:exported="false" />
+        <activity
+            android:name=".DataMahasiswaProfile"
+            android:exported="false" />
+        <activity
+            android:name=".DataMahasiswaTambah"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe2Edit"
+            android:exported="false" />
+        <activity
+            android:name=".SnKEdit"
+            android:exported="false" /> <!-- Penerima untuk menerima pesan push -->
+        <receiver
+            android:name=".MyFirebaseMessagingReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.myapp.notification" />
+            </intent-filter>
+        </receiver> <!-- Layanan FirebaseMessagingService untuk memproses pesan push -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".PesananSelesaiDownload"
+            android:exported="false" />
+        <activity
+            android:name=".BuktiBayar"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPesananAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".UbahPassword"
+            android:exported="false" />
+        <activity
+            android:name=".BerhasilUploadBuktiBayar"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPesananEdit"
+            android:exported="false" />
+        <activity
+            android:name=".DataMahasiswaUpdateKamar"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicGedungE"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicGedungD"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicGedungC"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicGedungB"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicGedungA"
+            android:exported="false" />
+        <activity
+            android:name=".DataMahasiswaTampil"
+            android:exported="false" />
+        <activity
+            android:name=".CaraDaftarEdit"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDDPjFtdAtIxtEHCPqjFC6EYyUG8C4_1vc" />
+
+        <activity
+            android:name=".Deluxe1Edit"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivityAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicVipNonAc"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicVipAc"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicStandard"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicDeluxe5B"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicDeluxe5A"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicDeluxe4"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicDeluxe3"
+            android:exported="false" />
+        <activity
+            android:name=".DataMahasiswaKamar"
+            android:exported="false" />
+        <activity
+            android:name=".UploadBuktiBayar"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicDeluxe2"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSliderPicDeluxe1"
+            android:exported="false" />
+        <activity
+            android:name=".StrukturOrganisasi"
+            android:exported="false" />
+        <activity
+            android:name=".Sejarah"
+            android:exported="false" />
+        <activity
+            android:name=".LandasanHukum"
+            android:exported="false" />
+        <activity
+            android:name=".VisiMisi"
+            android:exported="false" />
+        <activity
+            android:name=".DataMahasiswa"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivityBefore"
+            android:exported="false" />
+        <activity
+            android:name=".Pembayaran"
+            android:exported="false" />
+        <activity
+            android:name=".HelpdeskEmail"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPesanan"
+            android:exported="false" />
+        <activity
+            android:name=".DetailNotifikasi"
+            android:exported="false" />
+        <activity
+            android:name=".ZoomGallery"
+            android:exported="false" />
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".Helpdesk"
+            android:exported="false" />
+        <activity
+            android:name=".Daftar"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".BookingSekarang"
+            android:exported="false" />
+        <activity
+            android:name=".GetStarted"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivityAfter1"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotifikasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GedungE"
+            android:exported="false" />
+        <activity
+            android:name=".GedungD"
+            android:exported="false" />
+        <activity
+            android:name=".GedungC"
+            android:exported="false" />
+        <activity
+            android:name=".GedungB"
+            android:exported="false" />
+        <activity
+            android:name=".GedungA"
+            android:exported="false" />
+        <activity
+            android:name=".VipNonAc"
+            android:exported="false" />
+        <activity
+            android:name=".VipAc"
+            android:exported="false" />
+        <activity
+            android:name=".Standard"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe5B"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe5A"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe4"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe3"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe2"
+            android:exported="false" />
+        <activity
+            android:name=".SnKActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Deluxe1"
+            android:exported="false" />
+        <activity
+            android:name=".GaleriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaraDaftarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

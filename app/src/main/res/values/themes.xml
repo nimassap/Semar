@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Semar5" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="Theme.Semar5" parent="Base.Theme.Semar5" />
+
+    <style name="SlideActivityAnimation" parent="android:style/Animation.Activity">
+
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_effect</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_effect</item>
+
+    </style>
+
+</resources>

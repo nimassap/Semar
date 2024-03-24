@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="background1">#EBE6F1</color>
+    <color name="backgrund2">#F8F3EC</color>
+
+    <color name="ungu">#691DF8</color>
+    <color name="kuning">#FFF88B05</color>
+    <color name="bgheader">#F3F3F4</color>
+    <color name="bgtrans">#BCB9C3</color>
+    <color name="ungu_transparant">#80691DF8</color>
+    <color name="button">#8A52F3</color>
+    <color name="lavender">#8692f7</color>
+    <color name="button2">#A17EE2</color>
+    <color name="black1">#3D3C3C</color>
+    <color name="border">#3A09AC</color>
+
+    <color name="colortext">#ADAAB5</color>
+    <color name="biru">#05163A</color>
+
+</resources>

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPesanan"
+
+    android:id="@+id/drawer_layout_detailpesanan"
+    android:background="@color/background1">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navdrawer_view"
+        app:headerLayout="@layout/navdrawer_header"
+        app:menu="@menu/navdrawer_menu"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/button"
+        app:itemTextColor="@color/button"
+        android:backgroundTint="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:navigationIcon="@drawable/ic_menu"
+            android:id="@+id/toolbar"
+            android:elevation="4dp"
+            android:background="@color/white"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/homesemar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logosemar"
+                android:layout_marginEnd="56dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Pendaftaran"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/notifikasi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="60dp"
+                    app:cardCornerRadius="0dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/detail_kamar_judul"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kamar Standard A2"
+                            android:padding="5dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Pemesan"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/detail_nama_pemesan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Nimas Ayuning Prameswari"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Durasi"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="7dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1 Tahun"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jalur"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="7dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/detail_jalur"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bidik Misi"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Opsi Pembayaran"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="7dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/detail_opsi_pembayaran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2 x Pembayaran (per Tahun)"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jumlah Penghuni"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/detail_jumlah_penghuni"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sendiri"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jenis Kelamin"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/detail_jenis_kelamin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="P"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gedung"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="7dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/detail_gedung"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="A2.01"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kamar"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="7dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/detail_kamar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="A2.01"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Harga"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="7dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/detail_harga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rp500.000"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tanggal Masuk"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="7dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/detail_tanggal_masuk"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1 Juni 2023"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tanggal Keluar"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="7dp"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:strokeColor="@color/border"
+                            app:strokeWidth="2dp"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/detail_tanggal_keluar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1 Juni 2024"
+                                android:padding="5dp"
+                                android:textSize="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@null"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="end"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="20dp">
+
+                            <Button
+                                android:id="@+id/edit_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Edit"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/button2"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="5dp"/>
+
+                            <Button
+                                android:id="@+id/bayar_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bayar"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/button2"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="15dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_background"
+            android:elevation="2dp"
+            app:itemIconSize="25dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottomnav_menu" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

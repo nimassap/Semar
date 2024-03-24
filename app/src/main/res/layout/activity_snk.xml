@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnKActivity"
+    android:fitsSystemWindows="true"
+
+    android:id="@+id/drawer_layout_snk"
+    android:background="@color/background1">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navdrawer_view"
+        app:headerLayout="@layout/navdrawer_header"
+        app:menu="@menu/navdrawer_menu"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/button"
+        app:itemTextColor="@color/button"
+        android:backgroundTint="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:navigationIcon="@drawable/ic_menu"
+            android:id="@+id/toolbar"
+            android:elevation="4dp"
+            android:background="@color/white"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/homesemar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logosemar"
+                android:layout_marginEnd="56dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/sub_header"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    tools:ignore="MissingConstraints"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Syarat dan Ketentuan"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        android:shadowRadius="10"
+                        android:shadowColor="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home  "
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:drawableRight="@drawable/ic_arrow"
+                            android:textStyle="bold"
+                            android:shadowRadius="10"
+                            android:shadowColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Syarat dan Ketentuan"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:shadowRadius="10"
+                            android:shadowColor="@color/black"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- Cara Booking -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Syarat dan Ketentuan"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="27dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_add"
+                            android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/edit_icon"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/snk1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selama tinggal di Rusunawa Undip saya berjanji untuk menyatakan kesanggupan dan bersedia mentaati semua Peraturan yaitu: (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="20dp"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:justificationMode="inter_word"/>
+
+
+                    <!--syarat 1 -->
+                    <TextView
+                        android:id="@+id/snk2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Membayar tarif uang sewa tepat waktu; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a. Mahasiswa non bidik misi pembayaran sewa dibayar 12 (dua belas) bulan diawal hunian (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="b. Mahasiswa penerima bidik misi pembayaran bisa diangsur 2 (dua) kali, dengan rincian sebagai beriku; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="i. Pembayaran pertama 6 (enam) bulan dibayarkan diawal hunian (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="50dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ii. Pembayaran kedua 6 (enam) bulan dibayarkan bulan ke empat selama hunian (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="50dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="c. Mahasiswa Exchange atau( transfer Kredit )Pembayaran selama 1 semester bisa 2 (dua) kali pembayaran per 6 bulan. (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="d. Membuat Surat Pernyataan bahwa siap tinggal selama setahun dan bisa diperpanjang bermaterai Rp. 10.000. (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+
+
+
+                    <!--syarat 2 -->
+                    <TextView
+                        android:id="@+id/snk9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Melengkapi atau menyediakan atau mengusahakan sendiri perlengkapan atau kebutuhan sehari-hari berupa: (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a. Perlengkapan tidur : Bantal atau Guling atau Sprei atau Sarung bantal atau Selimut atau perlengkapan tidur lainnya; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="b. Perlengkapan kamar : Kacarias atau kastok atau gantungan baju atau kesed atau korden atau tempat sampah ruangan atau alat kebersihan; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="c. Perlengkapan kamar mandi : Ember atau gayung atau handuk atau perlengkapan mandi dan cuci; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="d. Perlengkapan dan penyediaan kebutuhan pokok : Makan atau minum dan peralatannya; dan (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="e. Perlengkapan belajar, laundri, transportasi, dan kebutuhan sehari-hari lainnya. (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+
+                    <!--syarat 3 -->
+                    <TextView
+                        android:id="@+id/snk15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Penghuni Rusunawa Undip wajib melaksanakan Peraturan dan Tata Tertib Badan Pengelola Rusunawa: (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a. Menjaga kesopanan, kebersihan, ketertiban, keindahan dan keamanan lingkungan; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="b. Menggunakan dan merawat fasilitas yang diterima dari Badan Pengelola Rusunawa; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="c. Menjaga dan mengamankan barang-barang milik pribadi. Kehilangan barang-barang milik pribadi di luar tanggung jawab Badan Pengelola Rusunawa; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="d. Melaporkan dan menyerahkan foto kopi STNK bagi yang membawa kendaraan bermotor roda dua dan atau roda empat; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="e. Membayar uang sewa tepat pada waktunya; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="f. Penghuni harus mengganti biaya perbaikan atas kerusakan yang dilakukan oleh Penghuni, misalnya mencoret atau merusak tembok, almari, meja belajar dan inventarisasi lainnya; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="g. Jika terjadi kerusakan kran air atau lampu penerangan yang berada di kamar masing-masing sebagai akibat sudah digunakan penghuni, maka perbaikan atau penggantiannya menjadi tanggung jawab penghuni. (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="h. Ruang kamar hanya untuk belajar dan tidur penghuni; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="i. Penghuni boleh menerima tamu hanya di hall atau lobby umum pada pukul 06.00 WIB s/d 21.00 WIB (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="j. Tamu dilarang masuk di kamar dan menginap di kamar penghuni; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="k. Tamu wajib menunjukkan identitas dan mengisi buku tamu pada petugas keamanan; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+
+                    <!--syarat 4 -->
+                    <TextView
+                        android:id="@+id/snk27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. Penghuni atau penyewa Rusunawa Undip dilarang: (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a. Memindahkan hak sewa kepada pihak lain; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="b. Menggunakan kamar hunian sebagai tempat usaha atau gudang (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="c. Berjudi, mengedarkan atau memakai narkoba, minuman keras, berbuat maksiat, kegiatan yang menimbulkan suara keras atau bising, bau menyengat, yang mengganggu keamanan, kenyamanan dan ketertiban lingkungan; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="d. Mengadakan kegiatan organisasi terlarang sebagaimana Peraturan Perundangan-undangan yang berlaku; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="e Merokok dikamar, ruangan, loby, atau hall, dan memasak dengan menggunakan kayu, arang, atau bahan lain yang mengotori atau yang dapat menimbulkan bahaya kebakaran; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="f. Mengubah konstruksi bangunan rusunawa dan membuang benda-benda ke dalam saluran air kamar mandi atau WC yang dapat menyumbat saluran pembuangan; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="g. Menyimpan segala jenis bahan peledak, bahan kimia, bahan bakar atau bahan terlarang lainnya yang dapat menimbulkan kebakaran atau bahaya lain; (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="h. Membawa dan memelihara hewan piaraan; dan (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <TextView
+                        android:id="@+id/snk36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="i. Membawa keluar barang-barang inventarisasi BP Rusunawa (tempat tidur, almari, spring bad atau kasur, kursi), kecuali barang-barang milik pribadi. (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+
+                    <!--syarat 5 -->
+                    <TextView
+                        android:id="@+id/snk37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5. Sanggup tinggal di Rusunawa Undip minimal selama 12 (dua belas) bulan dan uang yang sudah dibayarkan tidak bisa ditarik kembali. (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+
+                    <!--syarat 6 -->
+                    <TextView
+                        android:id="@+id/snk38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6. Periode hunian dimulai pada bulan Agustus 2023 sampai dengan juli 2024 apabila ingin melanjutkan ke periode selanjutnya Penghuni wajib mendaftar ulang (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+
+                    <!--syarat 7 -->
+                    <TextView
+                        android:id="@+id/snk39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7. Apabila terjadi pelanggaran terhadap Perjanjian tersebut dia atas saya bersedia menerima Peringatan, Sanksi, dan Pemutusan Sepihak oleh Badan Pengelola Rusunawa dan Universitas Diponegoro yang dibenarkan secara hukum atas dasar tingkatan pelanggaran. (tes)"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="30dp"
+                        android:justificationMode="inter_word"/>
+
+                    <Button
+                        android:id="@+id/edit_snk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EDIT"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/button2"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_background"
+            android:elevation="2dp"
+            app:itemIconSize="25dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottomnav_menu" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

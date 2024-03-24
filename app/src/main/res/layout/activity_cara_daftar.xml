@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaraDaftarActivity"
+    android:fitsSystemWindows="true"
+
+    android:id="@+id/drawer_layout_cara_booking"
+    android:background="@color/background1">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navdrawer_view"
+        app:headerLayout="@layout/navdrawer_header"
+        app:menu="@menu/navdrawer_menu"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/button"
+        app:itemTextColor="@color/button"
+        android:backgroundTint="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:navigationIcon="@drawable/ic_menu"
+            android:id="@+id/toolbar"
+            android:elevation="4dp"
+            android:background="@color/white"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/homesemar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logosemar"
+                android:layout_marginEnd="56dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/sub_header"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    tools:ignore="MissingConstraints"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cara Pendaftaran Kamar"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        android:shadowRadius="10"
+                        android:shadowColor="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home  "
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:drawableRight="@drawable/ic_arrow"
+                            android:textStyle="bold"
+                            android:shadowRadius="10"
+                            android:shadowColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Cara Pendaftaran Kamar"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:shadowRadius="10"
+                            android:shadowColor="@color/black"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- Cara Booking -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cara Melakukan Pendaftaran Kamar"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="27dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"/>
+
+
+
+                    <TextView
+                        android:id="@+id/hyperlink_sso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hyperlink_sso1"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="20dp"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"/>
+
+                    <TextView
+                        android:id="@+id/hyperlink_profil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="02. Lengkapi data profil terlebih dahulu apabila diminta."
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="13dp"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"/>
+
+                    <TextView
+                        android:id="@+id/hyperlink_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="03. Pilih kamar di halaman Home sesuai jenis kelamin. Kamar tidak akan tampil jika memilih kamar tidak sesuai jenis kelamin."
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="13dp"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_caradaftar4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="04. Pilih tanggal check in, durasi, opsi (Single/Double), dan kamar yang akan ditempati."
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="13dp"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"/>
+
+                    <TextView
+                        android:id="@+id/hyperlink_booknow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="05. Tekan tombol Daftar Sekarang untuk menampilkan detail pesanan."
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="13dp"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"/>
+
+                    <TextView
+                        android:id="@+id/hyperlink_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="06. Setelah tampil detail pesanan, tekan tombol Proses Pesanan Saya dan lanjutkan proses pembayaran."
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="13dp"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"/>
+
+                    <Button
+                        android:id="@+id/edit_caradaftar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EDIT"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/button2"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="50dp"
+                        android:visibility="gone"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_background"
+            android:elevation="2dp"
+            app:itemIconSize="25dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottomnav_menu" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetStarted"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/banner_bg___edited"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:id="@+id/getstarted_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEMAR BY RUSUNAWA UNDIP"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/getstarted_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMFY, SAFE, HOMEY"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/getstarted_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present a solution for your needs who are looking for accommodation or boarding houses around the Diponegoro University, Tembalang, Semarang City."
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp"/>
+
+        <Button
+            android:id="@+id/getstarted_butt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GET STARTED"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:backgroundTint="@color/button2"
+            android:textAlignment="center"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

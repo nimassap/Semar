@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_galeri"
+            android:icon="@drawable/nav_galeri"
+            android:title="Galeri" />
+        <item
+            android:id="@+id/nav_carabooking"
+            android:icon="@drawable/nav_carabooking"
+            android:title="Cara Daftar Kamar" />
+        <item
+            android:id="@+id/nav_snk"
+            android:icon="@drawable/nav_snk"
+            android:title="Syarat dan Ketentuan" />
+
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/nav_login"
+                    android:title="Login" />
+                <item
+                    android:id="@+id/nav_daftar"
+                    android:icon="@drawable/nav_daftar"
+                    android:title="Daftar" />
+                <item
+                    android:id="@+id/nav_data_mahasiswa"
+                    android:icon="@drawable/nav_datam"
+                    android:title="Data Mahasiswa"/>
+                <item
+                    android:id="@+id/nav_daftar_kamar"
+                    android:icon="@drawable/nav_daftarkamar"
+                    android:title="Daftar Kamar"/>
+                <item
+                    android:id="@+id/nav_ubahpass"
+                    android:icon="@drawable/nav_ubahpass"
+                    android:title="Ubah Password" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/nav_logout"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Contact Us">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_helpdesk"
+                    android:icon="@drawable/nav_helpdesk"
+                    android:title="Helpdesk" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/nav_about"
+                    android:title="About" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

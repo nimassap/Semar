@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SelesaiFragment"
+    android:id="@+id/fragment_container">
+
+    <TextView
+        android:id="@+id/selesai_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mahasiswa belum melakukan pendaftaran kamar"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#A19999"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/selesai_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan login terlebih dahulu"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#A19999"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/selesai_pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan selesaikan pembayaran"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#A19999"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_detailpesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"/>
+
+</FrameLayout>
